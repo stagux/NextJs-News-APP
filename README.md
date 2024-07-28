@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Key Points:
+
+    State Management: The component uses useState to manage various states like articles, search term, page number, loading status, error messages, and dark mode.
+    Fetching News: The fetchNews function is responsible for fetching news articles from the NewsAPI. It constructs the API URL based on whether a search term is provided or not and updates the articles          state accordingly.
+    Effect Hooks: useEffect is used to fetch general news articles on initial component mount and to fetch more articles when the search term or page number changes.
+    Error Handling: Errors during fetching are caught and displayed to the user.
+    Dark Mode Toggle: The dark mode is toggled by changing the darkMode state, and the CSS classes are updated accordingly.
+    User Interaction: The component handles user interactions like searching for news and loading more articles.
+    
+
